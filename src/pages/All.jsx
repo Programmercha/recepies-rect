@@ -4,6 +4,7 @@ import { useFetch } from '../hooks/useFetch'
 
 const All = () => {
     const {data: foods, error, loading} = useFetch('https://my-json-server.typicode.com/fayozbekdew/food-db/recipes')
+    
     return (
       <ul className='flex items-center justify-center mt-14 mb-10 gap-7 flex-wrap '>
       {foods && foods.map((food) => {
